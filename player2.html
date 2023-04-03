@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link href="//static.tvc.ru/css/player.css?v=5.3" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script type="text/javascript" src="//static.tvc.ru/js/analytics.js?v=1.2"></script>
+    <script async src="https://yastatic.net/pcode/adfox/adfox-cookie-matching.js?owner_id=226279"></script>
+    <script>
+        //vars from server
+        window.pl = window.pl || {};
+        window.pl.data = {};
+        window.pl.data.ref =  '(none)';
+        window.pl.data.sid = '';
+        window.pl.data.id = '';
+        window.pl.data.dataUrl = 'https://www.tvc.ru/channel/onairjson';
+        window.pl.data.isVod = 0;
+        window.pl.data.metric = '';
+        window.pl.data.playerMode = '(none)';
+        window.pl.data.statRev = '1518';
+        window.pl.data.liveUrl = 'https://tavr.mediacdn.ru/cdn/tavria/playlist.m3u8';
+        
+    </script>
+    <script src="//static.tvc.ru/js/player/utils.js?v=1.2"></script>
+    <script src="//static.tvc.ru/js/player/jsFlashBridge.js?v=4.1"></script>
+    <!-- get & set params for player -->
+    <script src="//static.tvc.ru/js/player/urlparser.js?v=1.02"></script>
+    <script src="//static.tvc.ru/js/player/setParams.js?v=2.2"></script>
+    <!-- html5 js -->
+    <script src="//static.tvc.ru/js/player/libs/jquery-1.12.1.min.js"></script>
+    <script src="//static.tvc.ru/js/player/libs/hls.min.js"></script>
+    <script src="//static.tvc.ru/js/player/tmpl.js?v=1.3"></script>
+    <script src="//static.tvc.ru/js/player/VAST.js?v=3.3"></script>
+    <script src="//static.tvc.ru/js/player/vpaid.js?v=3.1"></script>
+    <script src="//static.tvc.ru/js/player/A.js?v=3.6"></script>
+    <script src="//static.tvc.ru/js/player/stat.js?v=3.9"></script>
+    <!-- html5 ui -->
+    <script src="//static.tvc.ru/js/player/libs/jscrollpane.js?1"></script>
+    <script src="//static.tvc.ru/js/player/libs/mousewheel.js?1"></script>
+    <script src="//static.tvc.ru/js/player/controls.js?v=3.6"></script>
+    <script src="//static.tvc.ru/js/player/uiInfo.js?v=1.02"></script>
+    <script src="//static.tvc.ru/js/player/share.js?v=3.22"></script>
+    <script src="//static.tvc.ru/js/player/modal.js?v=2.1"></script>
+    <script src="//static.tvc.ru/js/player/outsideControl.js?v=1.02"></script>
+    <script src="//static.tvc.ru/js/player/html5player_main.js?v=4.1"></script>
+</head>
+<body>
+<div id="main" class="pl-player-wrap">
+    <div id="flash_player">
+    </div>
+</div>
+<!-- loader - set type of player -->
+<script src="//static.tvc.ru/js/player/loader.js?v=212"></script>
+<!-- counters [ -->
+<div class="count">
+
+<div style="display: none">
+<!--LiveInternet counter--><script type="text/javascript">
+try {
+document.write("<a href='//www.liveinternet.ru/click;TVCenter' "+
+"target=_blank><img src='//counter.yadro.ru/hit;TVCenter?t44.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+} catch (e) {
+  console.error('try...catch: ' + e);
+}
+</script><!--/LiveInternet-->
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+try {   
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(22353196, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        trackHash:true
+   });
+} catch (e) {
+	console.error('try...catch: ' + e);
+}
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22353196" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
+<!-- Yandex.Metrika counter --><script type="text/javascript">
+try {
+(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22353196 = new Ya.Metrika({id:22353196, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+} catch (e) {
+  console.error('try...catch: ' + e);
+}
+</script><noscript><div><img src="//mc.yandex.ru/watch/22353196" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</div>
+
+<script type="text/javascript">
+try {
+var ttsmi2_data = { siteid: 39127, count: 'site' };
+(function() {
+var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+sc.src = '//target.smi2.net/client/target.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+}());
+} catch (e) {
+  console.error('try...catch: ' + e);
+}
+</script>
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+try {
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "38736", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+} catch (e) {
+  console.error('try...catch: ' + e);
+}
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=38736;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+<!-- ] counters -->
+</body>
+</html>
